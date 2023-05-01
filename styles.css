@@ -1,0 +1,215 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f5;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "encabezado encabezado"
+        "datos datos"
+        "datos-abajo datos-abajo"
+}
+
+.c1-encabezado {
+    grid-area: encabezado;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: #3b82f6;
+}
+
+.datos {
+    grid-area: datos;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin: 3% 5% 3% 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.datos-abajo {
+    grid-area: datos-abajo;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0% 5% 3% 5%;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.encabezado-izq {
+    grid-column: 1 / 2;
+}
+
+.encabezado-der {
+    grid-column: 2 / 3;
+    justify-self: right;
+    margin: 2% 7% 2% 0%;
+}
+
+.datos-perfil {
+    grid-column: 1;
+}
+
+.datos-personales {
+    grid-column: 2;
+}
+
+.boton-seguir {
+    grid-column: 3;
+}
+
+#usuario {
+    background-color: #dbeafe;
+    color: #1f40af;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+#usuario::placeholder {
+    color: #1f40af;
+}
+
+input[type="search"]:focus {
+    outline: 2px solid #20B0DD;
+}
+
+#logo {
+    margin: 2% 0% 2% 7%;
+    height: 35px;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    border: #3b82f6 solid 5px;
+    height: 200px;
+    margin: 10%;
+    align-self: center;
+    display: flex;
+}
+
+.datos-personales {
+    line-height: 15px;
+    align-self: center;
+    margin-left: 5%;
+}
+
+.texto-gris {
+    color: #71717a;
+}
+
+#boton-seguir {
+    height: 37px;
+    width: 100px;
+    background-color: #3b82f6;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+}
+
+.boton-seguir {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15%;
+}
+
+.datos-post {
+    background-color: #FFFFFF;
+    padding: 2%;
+    border-radius: 10px;
+    margin-right: 5%;
+    height: auto;
+    height: fit-content;
+}
+
+.datos-sobremi {
+    background-color: #FFFFFF;
+    padding: 5%;
+    border-radius: 10px;
+    height: auto;
+    height: fit-content;
+}
+
+#foto-tokio {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+#boton-megusta {
+    height: 45px;
+    width: 100px;
+    background-color: #f4f4f5;
+    font-size: 15px;
+    color: #3b82f6;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2%;
+}
+
+.nombre-azul {
+    color: #3b82f6;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.nombre-gris {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.texto-comentario {
+    display: inline-block;
+}
+
+.contador-likes {
+    display: inline-block;
+    text-align: right;
+}
+
+#boton-eliminar {
+    height: 45px;
+    width: 100px;
+    background-color: #f4f4f5;
+    font-size: 15px;
+    color: #f05a5a;
+    border-radius: 10px;
+    border: none;
+    margin: 0% 0% 2% 2%;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 2% 2% 2%;
+}
+
+#boton-comentar {
+    height: 37px;
+    width: 100px;
+    background-color: #3b82f6;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    margin-left: 1%;
+}
+
+#comentar {
+    height: 37px;
+    width: 80%;
+    background-color: #f4f4f5;
+    border-radius: 10px;
+    border: none;
+    padding-left: 2%;
+}
