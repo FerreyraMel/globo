@@ -68,7 +68,7 @@ body {
     background-color: #dbeafe;
     color: #1f40af;
     width: 180px;
-    height: 35px;
+    height: auto;
     border-radius: 10px;
     border: none;
     padding: 15px;
@@ -78,13 +78,32 @@ body {
     color: #1f40af;
 }
 
+#usuario-error {
+    color: red;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 2%;
+}
+
+#comentario-error {
+    color: red;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 2%;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #20B0DD;
+}
+
 input[type="search"]:focus {
     outline: 2px solid #20B0DD;
 }
 
 #logo {
     margin: 2% 0% 2% 7%;
-    height: 35px;
+    height: 40px;
+    align-self: center;
 }
 
 #foto-perfil {
@@ -104,6 +123,7 @@ input[type="search"]:focus {
 
 .texto-gris {
     color: #71717a;
+    font-size: 14px;
 }
 
 #boton-seguir {
@@ -168,6 +188,10 @@ input[type="search"]:focus {
 }
 
 .texto-comentario {
+    display: inline-block;
+}
+
+.texto-comentario2 {
     display: inline-block;
 }
 

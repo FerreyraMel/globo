@@ -23,7 +23,7 @@
 
       <div class="encabezado-der">
         <form action="#" method="get">
-          <input type="search" id="usuario" placeholder="Ingresa tu usuario...">
+          <input type="text" id="usuario" placeholder="Ingresa tu usuario..." required>
         </form>
       </div>
     </div>
@@ -41,7 +41,7 @@
         <p class="texto-gris">Trabajando en Lawn N</p>
       </div>
       <div class="boton-seguir">
-        <button type="submit" id="boton-seguir">Seguir</button>
+        <button id="boton-seguir" onclick="BotonSeguirApretado()">Seguir</button>
       </div>
     </div>
 
@@ -51,8 +51,8 @@
         <img src="img/tokio.jpeg" alt="Foto de Tokio" id="foto-tokio">
 
         <div class="container">
-          <button type="submit" id="boton-megusta"><b>Me gusta</b></button>
-          <p class="contador-likes"><b>200</b> Likes</p>
+          <button id="boton-megusta"><b>Me gusta</b></button>
+          <p class="contador-likes" id="contador-likes">200 Likes</p>
         </div>
 
         <h3>Comentarios</h3>
@@ -63,14 +63,17 @@
         <p class="texto-comentario">¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos</p>
         <br>
         <p class="nombre-azul">Diana Bell</p>
-        <p class="texto-comentario">¡Espero que algún día pueda ver Tokio en persona!</p>
+        <p class="texto-comentario2">¡Espero que algún día pueda ver Tokio en persona!</p>
         <button type="submit" id="boton-eliminar"><b>Eliminar</b></button>
 
+        <div id="comentarios"></div>
+        <span id="usuario-error">Por favor, ingrese su nombre de usuario en la parte superior</span>
+        <span id="comentario-error">Por favor, ingrese un comentario</span>
+
         <form action="#" method="get">
-          <input type="search" id="comentar" placeholder="Deja tu comentario...">
+          <input type="search" id="comentar" placeholder="Deja tu comentario..." required>
           <button type="submit" id="boton-comentar">Comentar</button>
         </form>
-
       </div>
 
       <div class="datos-sobremi">
@@ -84,6 +87,7 @@
     </div>
 
   </div>
+  <script src="javascript.js"></script>
 </body>
 
 </html>
